@@ -1,0 +1,12 @@
+.header {
+  @apply bg-primary;
+}
+.header_h1 {
+  @apply text-white text-3xl font-bold p-1;
+}
+.login_btn {
+  @apply text-white p-2;
+}
+.cta-btn {
+  @apply text-white bg-secondary p-2;
+}
