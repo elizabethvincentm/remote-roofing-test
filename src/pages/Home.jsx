@@ -1,12 +1,12 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Series, Movies } from './index'
-import { Header, SubHeader, Tile, DisplayGrid } from '../components'
+import { Header, SubHeader, Tile, DisplayGrid, Footer } from '../components'
 import clapBoard from '../assets/clapboard.png'
 
 export const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
       <SubHeader text="Popular Titles" />
 
@@ -24,6 +24,7 @@ export const Home = () => {
           </DisplayGrid>
         </Route>
       </Switch>
+      <Footer />
     </div>
   )
 }
