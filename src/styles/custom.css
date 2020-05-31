@@ -2,11 +2,17 @@
   @apply bg-primary;
 }
 .header_h1 {
-  @apply text-white text-3xl font-bold p-1;
+  @apply text-white text-3xl font-bold py-1;
 }
 .login_btn {
   @apply text-white p-2;
 }
 .cta-btn {
   @apply text-white bg-secondary p-2;
+}
+.sub_header {
+  @apply bg-secondary text-white text-xl p-2;
+}
+.tile_title {
+  @apply text-lg py-2;
 }

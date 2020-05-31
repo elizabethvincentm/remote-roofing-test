@@ -1,30 +1,27 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Series, Movies } from './index'
-import { Header } from '../components'
+import { Header, SubHeader, Tile, DisplayGrid } from '../components'
+import clapBoard from '../assets/clapboard.png'
 
 export const Home = () => {
   return (
     <div>
       <Header />
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/series">Series</Link>
-            </li>
-            <li>
-              <Link to="/movies">Movies</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <SubHeader text="Popular Titles" />
+
       <Switch>
         <Route path="/series">
           <Series />
         </Route>
         <Route path="/movies">
           <Movies />
+        </Route>
+        <Route path="/">
+          <DisplayGrid>
+            <Tile url="/series" title="Popular Series" image={clapBoard} />
+            <Tile url="/movies" title="Popular Movies" image={clapBoard} />
+          </DisplayGrid>
         </Route>
       </Switch>
     </div>
