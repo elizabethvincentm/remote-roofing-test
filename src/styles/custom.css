@@ -28,3 +28,9 @@
 .footer_links {
   @apply border-white;
 }
+
+/* @media (min-width: 640px){
+.footer_links {
+  @apply border-white;
+} 
+} */
