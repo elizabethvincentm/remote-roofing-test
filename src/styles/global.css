@@ -1,10 +1,10 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "./fonts.css";
-@import "./custom.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './fonts.css';
+@import './custom.css';
 
 html,
 body {
-  @apply font-sans text-body leading-snug antialiased h-full bg-primary;
+  @apply font-sans text-body leading-snug antialiased h-full bg-white;
 }
