@@ -10,11 +10,11 @@ import { ReactComponent as AppStoreBadge } from '../assets/appStore.svg'
 
 export const Footer = () => {
   const footer_links =
-    'border-white-50 border-r px-2 text-sm text-white-50 hover:text-white'
+    'border-white-50 px-2 py-1 text-sm text-white-50 hover:text-white md:border-r md:py-0'
   return (
-    <section className="footer">
+    <section className="footer ">
       <Container>
-        <div className="flex flex-row items-center justify-start py-2">
+        <div className="flex flex-col items-center justify-start py-2 md:flex-row">
           <Link className={footer_links} to="/">
             Home
           </Link>
@@ -34,10 +34,10 @@ export const Footer = () => {
             Manage Account
           </Link>
         </div>
-        <div className="p-2 text-sm text-white-50">
+        <div className="p-2 mb-6 text-sm text-white-50 text-center md:mb-0">
           Copyright &copy; 2016 DEMO Streaming All Rights Reserved
         </div>
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-col items-center md:justify-between md:flex-row">
           <div className="flex flex-row">
             <a
               aria-label="facebook"
