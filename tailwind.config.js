@@ -52,23 +52,15 @@ module.exports = {
         'body-border': '#bfbfbf',
 
         primary: '#017CFF',
-        'primary-dark': '#bc353b',
         'primary-light': '#0597F2',
-        'primary-lighter': '#ff9993',
-        'primary-lightest': '#ffcbc3',
 
         secondary: '#404040',
-        'secondary-dark': '#000000',
-        'secondary-light': '#4e4345',
-        'secondary-lighter': ' #7a6e70',
-        'secondary-lightest': ' #a99c9e',
+        'secondary-dark': '#1E1E1E',
 
-        tertiary: '#E8E2BC',
-        'tertiary-dark': '#b6b08c',
-        'tertiary-light': '#ffffef',
+        tertiary: '#FEFEFE',
+        'tertiary-dark': '#F1F1F1',
       },
     },
   },
-  variants: {},
   plugins: [],
 }
