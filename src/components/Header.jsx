@@ -12,7 +12,7 @@ export const Header = () => {
           </Link>
 
           <div className="flex flex-row">
-            <Link className="login_btn" to="/">
+            <Link className="btn" to="/">
               Log In
             </Link>
             <Link className="cta-btn" to="/">
