@@ -3,6 +3,8 @@ import { Container } from './Container'
 
 import { AppState } from '../contexts'
 import { DisplayGrid } from './DisplayGrid'
+import { Loader } from './Loader'
+import { ErrorDisplay } from './ErrorDisplay'
 
 export const DisplayData = ({ filterByType }) => {
   const { state } = AppState()
@@ -18,7 +20,8 @@ export const DisplayData = ({ filterByType }) => {
             )}
           />
         )}
-        {status === 'loading' && <div>Loading...</div>}
+        {status === 'loading' && <Loader />}
+        {status === 'error' && <ErrorDisplay />}
       </Container>
     </section>
   )
