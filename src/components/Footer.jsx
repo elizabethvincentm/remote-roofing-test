@@ -5,8 +5,9 @@ import { ReactComponent as FbIcon } from '../assets/fb.svg'
 import { ReactComponent as TwitterIcon } from '../assets/twitter.svg'
 import { ReactComponent as InstaIcon } from '../assets/insta.svg'
 import { ReactComponent as MicrosoftBadge } from '../assets/microsoft.svg'
-import { ReactComponent as GoolePlayBadge } from '../assets/googlePlay.svg'
+//import { ReactComponent as GoolePlayBadge } from '../assets/googlePlay.svg'
 import { ReactComponent as AppStoreBadge } from '../assets/appStore.svg'
+import GoolePlayBadge from '../assets/googlePlay.png'
 
 export const Footer = () => {
   const footer_links =
@@ -79,7 +80,12 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GoolePlayBadge className="footer_svg_badge" />
+              {/* <GoolePlayBadge className="footer_svg_badge" /> */}
+              <img
+                src={GoolePlayBadge}
+                alt="googple play badge"
+                className="w-32"
+              />
             </a>
             <a
               aria-label="microsoft-appstore"
@@ -87,7 +93,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MicrosoftBadge className="footer_svg_badge m-auto" />
+              <MicrosoftBadge className="footer_svg_badge" />
             </a>
           </div>
         </div>
