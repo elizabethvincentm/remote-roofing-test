@@ -35,7 +35,7 @@ export const Footer = () => {
             Manage Account
           </Link>
         </div>
-        <div className="p-2 mb-6 text-sm text-white-50 text-center md:mb-0">
+        <div className="p-2 text-center mb-6 text-sm text-white-50 md:text-left  md:mb-0">
           Copyright &copy; 2016 DEMO Streaming All Rights Reserved
         </div>
         <div className="flex flex-col items-center md:justify-between md:flex-row">
