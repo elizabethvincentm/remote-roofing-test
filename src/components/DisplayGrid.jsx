@@ -3,7 +3,7 @@ import { Tile } from './Tile'
 
 export const DisplayGrid = ({ entries }) => {
   return (
-    <div className="flex flex-row flex-wrap items-center">
+    <div className="flex flex-row flex-wrap">
       {entries
         .slice(0, 21)
         .sort((entry1, entry2) => {
