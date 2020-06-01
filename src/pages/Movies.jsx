@@ -1,5 +1,12 @@
 import React from 'react'
+import { Header, SubHeader, Tile, DisplayGrid, Footer } from '../components'
 
 export const Movies = () => {
-  return <div>Movies</div>
+  return (
+    <>
+      <Header />
+      <div>Movies</div>
+      <Footer />
+    </>
+  )
 }
