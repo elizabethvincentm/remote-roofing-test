@@ -1,11 +1,12 @@
 import React from 'react'
-import { Header, SubHeader, Tile, DisplayGrid, Footer } from '../components'
+import { Header, SubHeader, DisplayData, Footer } from '../components'
 
 export const Movies = () => {
   return (
     <>
       <Header />
-      <div>Movies</div>
+      <SubHeader text="Popular Movies" />
+      <DisplayData filterByType="movie" />
       <Footer />
     </>
   )
