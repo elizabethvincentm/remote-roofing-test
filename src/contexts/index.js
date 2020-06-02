@@ -11,7 +11,7 @@ export const AppProvider = ({ children }) => {
           'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
         )
         const data = await response.json()
-        setState({ status: 'success', data: data })
+        setState({ status: 'success', data })
       } catch (error) {
         console.error('Error:', error)
         setState((prev) => ({ status: 'error', data: prev.data }))
