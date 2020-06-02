@@ -9,8 +9,8 @@ export const Home = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <SubHeader text="Popular Titles" />
-      <HomeTile title="series" />
-      <HomeTile title="movies" />
+      <HomeTile programType="series" />
+      <HomeTile programType="movies" />
       <Footer />
     </div>
   )
