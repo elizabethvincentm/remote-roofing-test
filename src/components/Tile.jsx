@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Tile = ({ title, image, year }) => {
   return (
-    <div className="card w-full mb-2 md:w-1/3 lg:w-1/4 md:px-4 md:mb-8">
+    <div className="card w-full mb-4 md:w-1/3 lg:w-1/4 md:px-4 md:mb-8">
       <article className="h-full cursor-pointer flex flex-col justify-start">
         <div className="flex-none w-full h-auto">
-          <div className="aspect-ratio-16/9 relative overflow-hidden rounded-sm lg:rounded">
+          <div className="aspect-ratio-16/9 relative overflow-hidden rounded-sm lg:rounded bg-gray-200">
             <img
               data-testid="tile-img-node"
               src={image}

@@ -1,12 +1,11 @@
 import React from 'react'
 import { Container } from './Container'
-
 import { AppState } from '../contexts'
 import { DisplayGrid } from './DisplayGrid'
 import { Loader } from './Loader'
 import { ErrorDisplay } from './ErrorDisplay'
 
-export const DisplayData = ({ filterByType, displayCount = 21 }) => {
+export const Content = ({ filterByType, displayCount = 21 }) => {
   const { state } = AppState()
   const { status, data } = state
   return (

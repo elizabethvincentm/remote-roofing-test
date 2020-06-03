@@ -4,14 +4,16 @@ import { Container } from './Container'
 
 export const Header = () => {
   return (
-    <section className="header">
+    <section className="bg-primary">
       <Container>
-        <div className="flex flex-row justify-between items-center py-2">
+        <div className="flex flex-col justify-between items-center py-2 md:flex-row">
           <Link to="/">
-            <h1 className="header_h1">DEMO Streaming</h1>
+            <h1 className="text-tertiary text-3xl font-bold py-1 mb-2 md:mb-0">
+              DEMO Streaming
+            </h1>
           </Link>
 
-          <div className="flex flex-row">
+          <div className="flex flex-row self-end text-sm md:text-base">
             <Link className="btn" to="/">
               Log In
             </Link>
