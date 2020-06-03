@@ -4,9 +4,21 @@ A demo project done for Remote Roofing, the project consists of 3 pages namely h
 
 URL - https://elizabethvincentm.github.io/remote-roofing-test
 
+## Technical and architectural choices:
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Project uses tailwindcss as the CSS utility. For loader, Skeleton component from Material-UI is used.
+
+## Improvements that could be made if allocated more time:
+
+- Add animations
+- Work on a better UI design
+- Add filter and sort options
+
 #### HomePage
 
-- Consists of inks to series and movies pages.
+- Consists of links to series and movies pages.
 - Mock buttons are provided for 'login' and 'Start your free trial'.
 - Some of the programs are highlighted as well
 
@@ -18,11 +30,10 @@ URL - https://elizabethvincentm.github.io/remote-roofing-test
 
 - Displays 21 entries with programType-movie, with release year >=2010 and sorted alphanumerically
 
-## Tech Stack
+## Data Flow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Project uses tailwindcss as the CSS utility.
+DEMO Streaming App
+↳ https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json
 
 ## Available Scripts
 
@@ -50,3 +61,12 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run deploy`
+
+Builds and deploys the app to github-pages and updates the `dist` folder.
+
+### `npm run test-coverage`
+
+Launches the test runner in the interactive watch mode.<br />
+Code coverage reports are generated afterwards.
