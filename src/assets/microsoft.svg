@@ -4,7 +4,7 @@
 	 viewBox="0 0 864 312" enable-background="new 0 0 864 312" xml:space="preserve">
 <g id="Layer_2">
 	<rect x="2.3" y="2.3" width="859.5" height="307.5"/>
-	<path fill="#D2D2D2" d="M4.5,4.5h855v303H4.5V4.5z M0,312h864V0H0V312z"/>
+	<!-- <path fill="#D2D2D2" d="M4.5,4.5h855v303H4.5V4.5z M0,312h864V0H0V312z"/> -->
 	<g>
 		<defs>
 			<rect id="SVGID_1_" y="0" width="864" height="312"/>

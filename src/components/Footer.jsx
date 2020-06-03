@@ -5,15 +5,15 @@ import { ReactComponent as FbIcon } from '../assets/fb.svg'
 import { ReactComponent as TwitterIcon } from '../assets/twitter.svg'
 import { ReactComponent as InstaIcon } from '../assets/insta.svg'
 import { ReactComponent as MicrosoftBadge } from '../assets/microsoft.svg'
-//import { ReactComponent as GoolePlayBadge } from '../assets/googlePlay.svg'
+import { ReactComponent as GoolePlayBadge } from '../assets/googlePlay.svg'
 import { ReactComponent as AppStoreBadge } from '../assets/appStore.svg'
-import GoolePlayBadge from '../assets/googlePlay.png'
+//import { ReactComponent as GoolePlayBadge } from '../assets/googlePlay.png'
 
 export const Footer = () => {
   const footer_links =
     'border-white-50 px-2 py-1 text-sm text-white-50 hover:text-white md:border-r md:py-0'
   return (
-    <section className="footer ">
+    <section className="text-tertiary-dark bg-secondary-dark py-10 mt-auto">
       <Container>
         <div className="flex flex-col items-center justify-start py-2 md:flex-row">
           <Link className={footer_links} to="/">
@@ -65,7 +65,7 @@ export const Footer = () => {
               <InstaIcon className="footer_svg_icon" />
             </a>
           </div>
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center flex-wrap justify-center mb-10">
             <a
               aria-label="microsoft-appstore"
               href="https://www.apple.com/in/ios/app-store/"
@@ -80,12 +80,12 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <GoolePlayBadge className="footer_svg_badge" /> */}
-              <img
+              <GoolePlayBadge className="footer_svg_badge" />
+              {/* <img
                 src={GoolePlayBadge}
                 alt="googple play badge"
                 className="w-32"
-              />
+              /> */}
             </a>
             <a
               aria-label="microsoft-appstore"

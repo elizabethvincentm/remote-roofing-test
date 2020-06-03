@@ -1,33 +1,19 @@
-.header {
-  @apply bg-primary;
-}
-.header_h1 {
-  @apply text-tertiary text-3xl font-bold py-1;
-}
 .btn {
   @apply text-tertiary p-2 rounded-sm;
 }
+
 .cta-btn {
   @apply text-tertiary bg-secondary p-2 rounded-sm;
 }
-.sub_header {
-  @apply bg-secondary text-tertiary text-xl p-2;
-}
-.footer {
-  @apply text-tertiary-dark bg-secondary-dark py-10 mt-auto;
-}
+
 .footer_svg_icon {
   @apply w-12 h-12 fill-current py-2 pr-2;
 }
+
 .footer_svg_badge {
   @apply w-32 py-2 pl-2;
 }
+
 .footer_links {
   @apply border-white;
 }
-
-/* @media (min-width: 640px){
-.footer_links {
-  @apply border-white;
-} 
-} */

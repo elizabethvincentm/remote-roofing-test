@@ -1,17 +1,12 @@
 import React from 'react'
-import { Header, SubHeader, HomeTile, Footer } from '../components'
-import { AppState } from '../contexts'
+import { SubHeader, HomeTile } from '../components'
 
 export const Home = () => {
-  const { state } = AppState()
-  console.log(state)
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
       <SubHeader text="Popular Titles" />
       <HomeTile programType="series" />
       <HomeTile programType="movies" />
-      <Footer />
-    </div>
+    </>
   )
 }
