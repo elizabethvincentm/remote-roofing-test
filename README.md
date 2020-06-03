@@ -6,15 +6,24 @@ URL - https://elizabethvincentm.github.io/remote-roofing-test
 
 ## Technical and architectural choices:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Why React?
 
-Project uses tailwindcss as the CSS utility. For loader, Skeleton component from Material-UI is used.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) because the UI framework is really robust, fast and secure. It is also a very popular framework which has a lot of community support and has many ready to use solutions available which makes the development time shorter.
 
-## Improvements that could be made if allocated more time:
+### Why Tailwindcss
+
+Project uses tailwindcss as the CSS utility. Having functional css to work with makes creating composable components a breeze.
+There are a lot of utility classes and other configurable plugins which helps in building styles.
+
+## Are there any improvements you could make to your submission?
 
 - Add animations
 - Work on a better UI design
 - Add filter and sort options
+
+## What would you do differently if you were allocated more time?
+
+I would try to come up with a better UX and Visual design. Also I would have loved to integrate authentication layer.
 
 #### HomePage
 
