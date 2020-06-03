@@ -15,7 +15,7 @@ export const Tile = ({ title, image, year }) => {
           </div>
         </div>
         <div className="flex-1 py-2 md:mt-auto md:py-6">
-          <h3 className="font-medium text-1xl mb-1 xl:text-xl md:mb-4">
+          <h3 className="font-medium text-1xl mb-1 xl:text-xl md:mb-1">
             {title}
           </h3>
           <p className="text-md leading-normal hidden md:block">{year}</p>
