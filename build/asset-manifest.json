@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/remote-roofing-test/static/css/main.c35bc7ba.chunk.css",
+    "main.js": "/remote-roofing-test/static/js/main.76eca0ba.chunk.js",
+    "main.js.map": "/remote-roofing-test/static/js/main.76eca0ba.chunk.js.map",
+    "runtime-main.js": "/remote-roofing-test/static/js/runtime-main.80354f6d.js",
+    "runtime-main.js.map": "/remote-roofing-test/static/js/runtime-main.80354f6d.js.map",
+    "static/js/2.c43071a5.chunk.js": "/remote-roofing-test/static/js/2.c43071a5.chunk.js",
+    "static/js/2.c43071a5.chunk.js.map": "/remote-roofing-test/static/js/2.c43071a5.chunk.js.map",
+    "index.html": "/remote-roofing-test/index.html",
+    "precache-manifest.cf36ac74aae77e06d1aeeb9168b5154a.js": "/remote-roofing-test/precache-manifest.cf36ac74aae77e06d1aeeb9168b5154a.js",
+    "service-worker.js": "/remote-roofing-test/service-worker.js",
+    "static/css/main.c35bc7ba.chunk.css.map": "/remote-roofing-test/static/css/main.c35bc7ba.chunk.css.map",
+    "static/js/2.c43071a5.chunk.js.LICENSE.txt": "/remote-roofing-test/static/js/2.c43071a5.chunk.js.LICENSE.txt",
+    "static/media/appStore.189e324b.svg": "/remote-roofing-test/static/media/appStore.189e324b.svg",
+    "static/media/fb.36ff8623.svg": "/remote-roofing-test/static/media/fb.36ff8623.svg",
+    "static/media/googlePlay.b775eda8.svg": "/remote-roofing-test/static/media/googlePlay.b775eda8.svg",
+    "static/media/insta.ebd54a47.svg": "/remote-roofing-test/static/media/insta.ebd54a47.svg",
+    "static/media/microsoft.4b2738dc.svg": "/remote-roofing-test/static/media/microsoft.4b2738dc.svg",
+    "static/media/twitter.c6d93894.svg": "/remote-roofing-test/static/media/twitter.c6d93894.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80354f6d.js",
+    "static/js/2.c43071a5.chunk.js",
+    "static/css/main.c35bc7ba.chunk.css",
+    "static/js/main.76eca0ba.chunk.js"
+  ]
+}
