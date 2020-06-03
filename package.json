@@ -19,6 +19,8 @@
     "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "npm run watch:css & react-scripts start",
     "build": "react-scripts build",
     "prebuild": "npm run build:css",
@@ -46,8 +48,10 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
+    "gh-pages": "^3.0.0",
     "jest-fetch-mock": "^3.0.3",
     "postcss": "^7.0.31",
     "postcss-cli": "^7.1.1"
-  }
+  },
+  "homepage": "https://elizabethvincentm.github.io/remote-roofing-test"
 }
