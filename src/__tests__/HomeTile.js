@@ -50,7 +50,11 @@ const fakeResponse = {
     },
   ],
 }
-test('shows homepage links with program details on render', () => {
+
+beforeEach(() => {
+  jest.resetAllMocks()
+})
+test('shows homepage links with program details on render', async () => {
   const promise = Promise.resolve(fakeResponse)
   jest.spyOn(window, 'fetch').mockImplementationOnce(() => {
     return Promise.resolve({
@@ -61,11 +65,15 @@ test('shows homepage links with program details on render', () => {
     <AppProvider>
       <Routes>
         <HomeTile programType="series" />
+        <HomeTile programType="movies" />
       </Routes>
     </AppProvider>
   )
-  expect(screen.findByTestId('popular-series')).toBeTruthy()
-  expect(screen.findByTestId('display-data-node')).toBeTruthy()
+  expect(screen.findByTestId('content-series')).toBeTruthy()
+  expect(screen.findByTestId('content-movies')).toBeTruthy()
   fireEvent.click(screen.queryByTestId('link-series'))
-  expect(screen.findByTestId('series-section-node')).toBeTruthy()
+  expect(await screen.findByText('Popular Series')).toBeInTheDocument()
+  fireEvent.click(screen.queryByText('DEMO Streaming'))
+  fireEvent.click(screen.queryByTestId('link-movies'))
+  expect(await screen.findByText('Popular Movies')).toBeInTheDocument()
 })
