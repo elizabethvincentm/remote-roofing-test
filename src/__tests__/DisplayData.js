@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import React from 'react'
 import { render, act, screen } from '@testing-library/react'
-import { DisplayData } from '../components'
+import { Content } from '../components'
 import { AppProvider } from '../contexts'
 
 const fakeResponse = {
@@ -97,7 +97,7 @@ test('FETCH_SUCCESS: display content filtered as "series" and sorted', async () 
   })
   const { getByText } = render(
     <AppProvider>
-      <DisplayData filterByType="series" />
+      <Content filterByType="series" />
     </AppProvider>
   )
   await act(() => promise)
@@ -117,7 +117,7 @@ test('FETCH_SUCCESS: display content filtered as "movie"', async () => {
 
   const { getByText } = render(
     <AppProvider>
-      <DisplayData filterByType="movie" />
+      <Content filterByType="movie" />
     </AppProvider>
   )
   await act(() => promise)
@@ -136,7 +136,7 @@ test('FETCH_SUCCESS: display content w.r.t displayCount and sorted', async () =>
 
   render(
     <AppProvider>
-      <DisplayData filterByType="series" displayCount={1} />
+      <Content filterByType="series" displayCount={1} />
     </AppProvider>
   )
   await act(() => promise)
@@ -150,7 +150,7 @@ test('DATA_LOADING: display loader', async () => {
     .mockImplementationOnce(() => Promise.reject('API Down'))
   render(
     <AppProvider>
-      <DisplayData filterByType="series" />
+      <Content filterByType="series" />
     </AppProvider>
   )
   screen.findByTestId('loader-node')
@@ -161,7 +161,7 @@ test('FETCH_ERROR: display errorpage', async () => {
     .mockImplementationOnce(() => Promise.reject('API Down'))
   render(
     <AppProvider>
-      <DisplayData filterByType="series" />
+      <Content filterByType="series" />
     </AppProvider>
   )
   await screen.findByTestId('error-node')

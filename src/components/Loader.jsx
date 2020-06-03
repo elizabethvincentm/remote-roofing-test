@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from './Container'
 import { Skeleton } from '@material-ui/lab'
 
 export const Loader = () => {

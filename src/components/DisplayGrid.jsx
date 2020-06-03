@@ -3,7 +3,7 @@ import { Tile } from './Tile'
 
 export const DisplayGrid = ({ entries }) => {
   return (
-    <div data-testid="display-grid" className=" flex flex-row flex-wrap">
+    <div data-testid="display-grid" className="flex flex-wrap md:-mx-4">
       {entries.map((entry) => (
         <Tile
           key={entry.title}
