@@ -9,7 +9,7 @@ export const Content = ({ filterByType, displayCount = 21 }) => {
   const { state } = AppState()
   const { status, data } = state
   return (
-    <section data-test-d="display-data-node" className="py-4">
+    <section data-testid={`content-${filterByType}`} className="py-4">
       <Container>
         {status === 'success' && (
           <DisplayGrid

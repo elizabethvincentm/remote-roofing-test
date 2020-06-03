@@ -27,8 +27,8 @@
     "postbuild": "mv build dist",
     "build:css": "postcss src/styles/global.css -o src/index.css",
     "watch:css": "postcss src/styles/global.css -o src/index.css -w",
-    "test": "react-scripts test",
-    "test-coverage": "npm test -- --coverage",
+    "test": "react-scripts test --coverage",
+    "test-coverage": "npm test -- --coverage  --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
