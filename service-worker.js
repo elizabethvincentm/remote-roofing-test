@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/remote-roofing-test/precache-manifest.cf36ac74aae77e06d1aeeb9168b5154a.js"
+  "/remote-roofing-test/precache-manifest.274376e761b9be0099c0f6b5b4e834c9.js"
 );
 
 self.addEventListener('message', (event) => {
