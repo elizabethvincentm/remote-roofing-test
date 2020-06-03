@@ -19,7 +19,7 @@
     "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "rm -rf dist && npm run build",
     "deploy": "gh-pages -d dist",
     "start": "npm run watch:css & react-scripts start",
     "build": "react-scripts build",
